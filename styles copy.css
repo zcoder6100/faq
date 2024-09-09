@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#ai-bot {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.collapsed #bot-body {
+    display: none;
+}
+
+.bot-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bot-body {
+    padding: 10px;
+}
+
+#bot-questions button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#bot-questions button:hover {
+    background-color: #f8f9fa;
+}
+
+.bot-answer {
+    margin-top: 10px;
+}
+
+#answer-text {
+    margin: 0;
+}
+
+#toggle-icon {
+    font-size: 20px;
+}

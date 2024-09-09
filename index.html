@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointment AI Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Our Clinic</h1>
+    <p>Here you can find information about your upcoming appointments.</p>
+    
+    <!-- AI Bot Widget -->
+    <div id="ai-bot" class="collapsed">
+        <div id="bot-header" class="bot-header" onclick="toggleBot()">
+            <span>FAQ</span>
+            <span id="toggle-icon">+</span>
+        </div>
+        <div id="bot-body" class="bot-body">
+            <div id="bot-questions">
+                <button onclick="showAnswer('q1')">1. How can I make an appointment?</button>
+                <button onclick="showAnswer('q2')">2. What should I bring to my appointment?</button>
+                <button onclick="showAnswer('q3')">3. Can I reschedule my appointment?</button>
+                <button onclick="showAnswer('q4')">4. How do I cancel my appointment?</button>
+                <button onclick="showAnswer('q5')">5. What if I am running late?</button>
+                <button onclick="showAnswer('q6')">6. Do you accept walk-ins?</button>
+                <button onclick="showAnswer('q7')">7. Is there a fee for missed appointments?</button>
+                <button onclick="showAnswer('q8')">8. How do I check my appointment history?</button>
+                <button onclick="showAnswer('q9')">9. Can I change the details of my appointment?</button>
+                <button onclick="showAnswer('q10')">10. What are your office hours?</button>
+            </div>
+            <div id="bot-answer" class="bot-answer">
+                <p id="answer-text">Click on a question to get an answer.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
